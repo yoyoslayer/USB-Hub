@@ -13,9 +13,8 @@ firmware anywhere in the project. The SL2.1S handles all of the USB hub logic
 internally, which means the board simply works the instant it's plugged in —
 nothing to flash, nothing to configure.
 
-What makes it unique: the sword-shaped outline / the themed silkscreen art /
-the fact that it was my first PCB and I went straight for a non-rectangular
-board
+What makes it unique: The sword-shaped outline that drew creative elements from
+Rezero and the addition of a Micro B port
 
 ## What it does / how to use it
 - Plug the **upstream USB-C** port into your computer.
@@ -37,12 +36,6 @@ USB-C port and splits it into four independent downstream channels, managing
 device enumeration and traffic on its own. Because it has a **built-in
 oscillator**, the design needs no external crystal — one fewer part to place
 and route.
-
-Each USB data line is run as a **differential pair** (D+ / D−), kept
-length-matched so the high-speed signals stay clean. Power coming in from the
-upstream port is **decoupled with an array of bypass capacitors** (1 µF and
-100 nF values) placed close to the controller and the connectors, to keep the
-5 V rail stable as devices draw current.
 
 USB-C orientation/role is set with **CC resistors**:
 - The **upstream USB-C** port uses **5.1 kΩ pull-downs** on its CC pins, so
@@ -82,9 +75,3 @@ I kept running out of USB ports,
 I wanted my first real PCB to be something I'd actually use every day, and I
 wanted the challenge of designing a board that wasn't just a rectangle. I used
 it to learn the full EasyEDA → JLCPCB pipeline from schematic to fabrication.]
-
-## A note on firmware
-This is a hardware-only design. The SL2.1S is a dedicated hub controller with
-a built-in oscillator and a fixed function — it requires no firmware, no
-microcontroller, and no external crystal. There is intentionally no code in
-this repository.
