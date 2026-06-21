@@ -1,4 +1,4 @@
- Astrea Hub — a 4-port USB hub shaped like Reinhard's sword
+## Astrea Hub: A 4-port USB hub shaped like Reinhard's sword from Rezero
 
 ## What it is
 A bus-powered 4-port USB 2.0 hub on a custom PCB, built around the SL2.1S
