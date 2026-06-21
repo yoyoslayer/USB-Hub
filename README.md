@@ -56,3 +56,9 @@ and route.
 I kept running out of USB ports,
 I wanted my first real PCB to be something I'd actually use every day, and I
 wanted the challenge of designing a board that wasn't just a rectangle.
+
+<img width="1545" height="1999" alt="AstreaHub" src="https://github.com/user-attachments/assets/c24e96c5-19bf-4e04-82fe-4ff2324dedcc" />
+<img width="2160" height="518" alt="Top PCB 3D View" src="https://github.com/user-attachments/assets/e3b158be-0fab-4bdd-ab22-5dcea93875a2" />
+<img width="1187" height="627" alt="image" src="https://github.com/user-attachments/assets/f608fb9c-2477-435f-8b56-9ce629248620" />
+
+
