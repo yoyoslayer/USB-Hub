@@ -37,20 +37,22 @@ and route.
 - **Type:** Bus-powered USB 2.0 hub
 - **Upstream:** 1× USB-C (to host)
 - **Downstream:** 2× USB-C, 1× USB-A, 1× Micro-B
-- **Controller:** SL2.1S (internal oscillator, no crystal required)
-- **Speed:** USB 2.0, up to 480 Mbps shared across all ports
-- **Power:** Bus-powered from the host port; no external supply
-- **Board:** Custom sword-shaped PCB
+- **Controller:** SL2.1S (internal oscillator, no additional clock required)
+- **Speed:** USB 2.0, up to 480 Mbps shared across all ports (must be tested upon build)
+- **Power:** Bus-powered from the host port; no external supply needed
+- **Board:** Reinhard-inspired sword-shaped PCB
 
-## Building one yourself
-1. Send the gerbers in `pcb/` to a fab house (this was designed for JLCPCB).
-   You can either order bare boards and hand-solder, or have them assembled.
-2. Source the parts listed in the BOM (designed around LCSC / JLCPCB parts).
-3. Reflow or hand-solder the SL2.1S, the connectors, the resistors, and the
-   decoupling capacitors. 
-4. If using the enclosure: print the case from the CAD files and attach the
-   board with screws.
-5. Plug the upstream port into a computer and you're done.
+## Assembly
+1. Download CAD files from onshape and the gerber zip.
+   - View the onshape link to the project here: https://cad.onshape.com/documents/7c607c3ebfcfa0479c0bf52b/w/723ed4fde2646e4e640c2162/e/bc4f0acb96e833c6c127c953?renderMode=0&uiState=6a3731a90b13741097a9af9d
+2. Purchase the parts from the BOM or select alternatives. (Screws must be exact identicals in dimensions)
+3. Order the PCB from JLCPCB (or your prefferred vendor) using the gerber file attached
+4. Print the case enclosure that houses the PCB and components
+5. Attach, assemble, and solder the parts to the PCB as it looks according to the Onshape CAD
+6. Insert heat inserts into their respective mounting holes, place PCB, then screw in the screws
+7. Repeat step 6 for the case
+Build Finished, sweeet
+
 
 ## Why I made it
 I kept running out of USB ports,
